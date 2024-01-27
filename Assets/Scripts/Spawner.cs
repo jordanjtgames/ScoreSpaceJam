@@ -30,7 +30,7 @@ public class Spawner : MonoBehaviour
     public void SpawnSlime()
     {
         float x, z;
-        x= Random.Range(-5, 5);
+        x= Random.Range(-4.5f, 4.5f);
         z= Random.Range(0, 10);
         Instantiate(Slime,new(nextSpawnPoint.x -x,0,nextSpawnPoint.z-z),Quaternion.identity);
 
