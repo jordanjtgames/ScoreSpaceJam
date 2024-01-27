@@ -4,8 +4,10 @@ using UnityEngine;
 
 public class MovementScript : MonoBehaviour
 {
-    [SerializeField]private int HorSpeed;
-    [SerializeField] private int forwardSpeed;
+    [SerializeField]private float HorSpeed;
+    [SerializeField] private float forwardSpeed;
+
+    [SerializeField] float SpeedMul;
 
     // Update is called once per frame
     void Update()
@@ -19,10 +21,14 @@ public class MovementScript : MonoBehaviour
        
 
         // Calculate the movement direction
-        Vector3 movement = new Vector3(horizontal, 0f, forwardSpeed).normalized;
+       // Vector3 movement = new Vector3(horizontal, 0f, 1f).normalized;
 
         // Move the character based on the input
-        transform.Translate(movement * HorSpeed * Time.deltaTime);
+        transform.Translate(new Vector3(horizontal * HorSpeed, 0f, forwardSpeed * 1f) * Time.deltaTime);
+    }
+    private void FixedUpdate()
+    {
+       forwardSpeed += forwardSpeed * Time.deltaTime * SpeedMul;
     }
 
 }
