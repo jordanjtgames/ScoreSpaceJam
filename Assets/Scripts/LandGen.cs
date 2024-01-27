@@ -14,6 +14,7 @@ public class LandGen : MonoBehaviour
     {
         Debug.Log("Spawning");
         spawner.SpawnTiles();
+        spawner.SpawnSlime();
         Destroy(gameObject,2f);
         
     }

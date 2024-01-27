@@ -5,6 +5,7 @@ using UnityEngine;
 public class Spawner : MonoBehaviour
 {
     [SerializeField] private GameObject[] Tile;
+    [SerializeField] private GameObject Slime;
     [SerializeField]Vector3 nextSpawnPoint= new(0,-0.5f,0);
     void Start()
     {
@@ -12,6 +13,7 @@ public class Spawner : MonoBehaviour
        for(int i = 0; i < 10; i++)
         {
             SpawnTiles();
+            SpawnSlime();
         }
         
     }
@@ -22,6 +24,15 @@ public class Spawner : MonoBehaviour
         GameObject temp = Instantiate(Tile[i],nextSpawnPoint,Quaternion.identity);
         nextSpawnPoint= temp.transform.GetChild(1).transform.position;
 
+
+    }
+
+    public void SpawnSlime()
+    {
+        float x, z;
+        x= Random.Range(-5, 5);
+        z= Random.Range(0, 10);
+        Instantiate(Slime,new(nextSpawnPoint.x -x,0,nextSpawnPoint.z-z),Quaternion.identity);
 
     }
 }
