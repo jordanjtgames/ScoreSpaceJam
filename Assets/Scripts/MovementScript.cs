@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.ProBuilder;
 
 public class MovementScript : MonoBehaviour
 {
@@ -12,6 +13,7 @@ public class MovementScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+       
         Move();
 
     }
@@ -20,15 +22,12 @@ public class MovementScript : MonoBehaviour
         float horizontal = Input.GetAxis("Horizontal");
        
 
-        // Calculate the movement direction
-       // Vector3 movement = new Vector3(horizontal, 0f, 1f).normalized;
-
-        // Move the character based on the input
-        transform.Translate(new Vector3(horizontal * HorSpeed, 0f, forwardSpeed * 1f) * Time.deltaTime);
+        transform.Translate((new Vector3(horizontal * forwardSpeed, 0f, forwardSpeed * 1f) * Time.deltaTime));
     }
     private void FixedUpdate()
     {
        forwardSpeed += forwardSpeed * Time.deltaTime * SpeedMul;
+        forwardSpeed = Mathf.Clamp(forwardSpeed, 10f, 60f);
     }
 
 }
