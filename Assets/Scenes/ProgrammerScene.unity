@@ -244,7 +244,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   HorSpeed: 10
-  forwardSpeed: 2
+  forwardSpeed: 10
+  SpeedMul: 0.05
 --- !u!54 &1408648835
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -487,7 +488,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e97b3fd4a37e1a042a65879b4a6f43b5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Tile: {fileID: 7680252254002716336, guid: f209fdb666accc84baa5d9342ba6a876, type: 3}
+  Tile:
+  - {fileID: 7680252254002716336, guid: f209fdb666accc84baa5d9342ba6a876, type: 3}
+  - {fileID: 7680252254002716336, guid: 3972a7f35bd573e4c8f70a0d61c1409d, type: 3}
+  - {fileID: 7680252254002716336, guid: 7c31071ac9df4744e9782a5f88123b36, type: 3}
+  nextSpawnPoint: {x: 0, y: -0.5, z: -1}
 --- !u!4 &1783135050
 Transform:
   m_ObjectHideFlags: 0
