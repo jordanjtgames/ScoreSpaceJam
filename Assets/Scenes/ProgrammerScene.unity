@@ -406,6 +406,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Shape: {fileID: 644828121}
+  spawner: {fileID: 0}
+  ResetKey: 9
   isDead: 0
   Shapes: 0
 --- !u!54 &644828124
