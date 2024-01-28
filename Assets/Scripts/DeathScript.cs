@@ -5,16 +5,22 @@ using UnityEngine;
 public class DeathScript : MonoBehaviour
 {
      PlayerManager player;
+    MovementScript Shape;
 
     private void Start()
     {
         player = GameObject.FindObjectOfType<PlayerManager>();  
+        Shape = GameObject.FindObjectOfType<MovementScript>();
     }
     private void OnTriggerEnter(Collider other)
     {
-        if(player.Shapes != 0)
+        if (other.gameObject.tag == "Player")
         {
-            player.isDead = true;
+            if (player.Shapes != 0)
+            {
+                player.isDead = true;
+                Debug.Log("I KILLED");
+            }
         }
     }
 }
