@@ -25,7 +25,7 @@ public class Spawner : MonoBehaviour
     {
         int i = Random.Range(0, Tile.Length);
         GameObject temp = Instantiate(Tile[i],nextSpawnPoint,Quaternion.identity);
-        nextSpawnPoint= temp.transform.GetChild(1).transform.position;
+        nextSpawnPoint= temp.transform.GetChild(0).transform.position;
 
 
     }
