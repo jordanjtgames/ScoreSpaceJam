@@ -7,17 +7,20 @@ public class MovementScript : MonoBehaviour
 {
     [SerializeField]private float HorSpeed;
     [SerializeField] private float forwardSpeed;
-    [SerializeField] private int ShapeIndex = 0;
+    public int ShapeIndex = 0;
     [SerializeField] GameObject[] Shapes;
     [SerializeField] float SpeedMul;
     [SerializeField] KeyCode ChangeKey;
+   [SerializeField] PlayerManager player;
 
     // Update is called once per frame
     void Update()
     {
-        ShapeSet();
-        Move();
-
+        if (!player.isDead)
+        {
+            ShapeSet();
+            Move();
+        }
     }
     void Move()
     {

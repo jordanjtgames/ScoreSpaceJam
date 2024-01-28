@@ -10,12 +10,15 @@ public class Spawner : MonoBehaviour
     void Start()
     {
 
-       for(int i = 0; i < 10; i++)
+       for(int i = 0; i < 3; i++)
         {
             SpawnTiles();
             SpawnSlime();
+            SpawnSlime();
+            SpawnSlime();
+
         }
-        
+
     }
 
    public void SpawnTiles()
@@ -31,7 +34,7 @@ public class Spawner : MonoBehaviour
     {
         float x, z;
         x= Random.Range(-4.5f, 4.5f);
-        z= Random.Range(0, 10);
+        z= Random.Range(0, 40);
         Instantiate(Slime,new(nextSpawnPoint.x -x,0,nextSpawnPoint.z-z),Quaternion.identity);
 
     }
