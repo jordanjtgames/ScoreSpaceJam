@@ -766,7 +766,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh25618
+  m_Name: pb_Mesh29358
   serializedVersion: 11
   m_SubMeshes:
   - serializedVersion: 2
@@ -1565,7 +1565,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1996037648
 Transform:
   m_ObjectHideFlags: 0
