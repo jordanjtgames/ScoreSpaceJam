@@ -6,7 +6,7 @@ public class Spawner : MonoBehaviour
 {
     [SerializeField] private GameObject[] Tile;
     [SerializeField] private GameObject Slime;
-    [SerializeField]Vector3 nextSpawnPoint= new(0,-0.5f,0);
+    [SerializeField]public Vector3 nextSpawnPoint= new(0,-0.5f,0);
     void Start()
     {
 
