@@ -725,6 +725,46 @@ PrefabInstance:
       propertyPath: m_Name
       value: TreePREFAB_C (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 5555167825922773725, guid: 6130f80556a9c9b49bb69b3e3d05ae7d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.50337
+      objectReference: {fileID: 0}
+    - target: {fileID: 5555167826584776306, guid: 6130f80556a9c9b49bb69b3e3d05ae7d, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.2813709
+      objectReference: {fileID: 0}
+    - target: {fileID: 5555167826584776306, guid: 6130f80556a9c9b49bb69b3e3d05ae7d, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.2813708
+      objectReference: {fileID: 0}
+    - target: {fileID: 5555167826584776306, guid: 6130f80556a9c9b49bb69b3e3d05ae7d, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.3397834
+      objectReference: {fileID: 0}
+    - target: {fileID: 5555167826584776306, guid: 6130f80556a9c9b49bb69b3e3d05ae7d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2.42
+      objectReference: {fileID: 0}
+    - target: {fileID: 5555167826584776306, guid: 6130f80556a9c9b49bb69b3e3d05ae7d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.228
+      objectReference: {fileID: 0}
+    - target: {fileID: 5555167826584776306, guid: 6130f80556a9c9b49bb69b3e3d05ae7d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 4.436
+      objectReference: {fileID: 0}
+    - target: {fileID: 5555167827404345977, guid: 6130f80556a9c9b49bb69b3e3d05ae7d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.106
+      objectReference: {fileID: 0}
+    - target: {fileID: 5555167827533367482, guid: 6130f80556a9c9b49bb69b3e3d05ae7d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.529
+      objectReference: {fileID: 0}
+    - target: {fileID: 5555167827945700872, guid: 6130f80556a9c9b49bb69b3e3d05ae7d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 3.178
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
