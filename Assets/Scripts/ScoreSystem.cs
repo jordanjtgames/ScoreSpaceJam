@@ -10,6 +10,7 @@ public class ScoreSystem : MonoBehaviour
     [SerializeField] TMP_Text ScoreText;
     public float ScoreCount = 0 ;
     [SerializeField] MovementScript Shape;
+  //  [SerializeField] StaticScore statScore;
     private void Start()
     {
         ScoreCount= 0 ;
@@ -36,6 +37,7 @@ public class ScoreSystem : MonoBehaviour
         }
         ScoreText.SetText(ScoreCount.ToString());
 
+        StaticScore.Score = (int)ScoreCount;
     }
 
 }

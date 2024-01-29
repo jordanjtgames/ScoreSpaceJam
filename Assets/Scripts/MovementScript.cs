@@ -50,7 +50,7 @@ public class MovementScript : MonoBehaviour
     private void FixedUpdate()
     {
        forwardSpeed += forwardSpeed * Time.deltaTime * SpeedMul;
-        forwardSpeed = Mathf.Clamp(forwardSpeed, 750f, 60000f);
+        forwardSpeed = Mathf.Clamp(forwardSpeed, 1000f, 60000f);
     }
    void  ShapeSet()
     {

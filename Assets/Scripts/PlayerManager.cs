@@ -73,7 +73,7 @@ public class PlayerManager : MonoBehaviour
             Scoresent = true;
         }
         audio.DeathAudio();
-        // audio.ContinueScreenPlay();
+        
 
         yield return new WaitForSeconds(5);
 
