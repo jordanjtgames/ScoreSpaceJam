@@ -1190,7 +1190,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: c362b9c09c20681489e531a9512c126d, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 53ff404b6c0606b41840cde2217a5993, type: 2}
+      objectReference: {fileID: 2100000, guid: 883dad117da02064b9223f39c06a46d7, type: 2}
     - target: {fileID: 919132149155446097, guid: c362b9c09c20681489e531a9512c126d, type: 3}
       propertyPath: m_Name
       value: WallCubeUVed
