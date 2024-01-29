@@ -31,15 +31,17 @@ public class MovementScript : MonoBehaviour
         if (player.isDead)
         {
             rb.isKinematic = true;
+          
+            {
+                
+            }
         }
     }
     void Move()
     {
         float horizontal = Input.GetAxis("Horizontal");
-        if (horizontal != 0f)
-        {
-            audio.MoveAudio();
-        }
+      
+       
 
 
 
@@ -48,7 +50,7 @@ public class MovementScript : MonoBehaviour
     private void FixedUpdate()
     {
        forwardSpeed += forwardSpeed * Time.deltaTime * SpeedMul;
-        forwardSpeed = Mathf.Clamp(forwardSpeed, 1000f, 60000f);
+        forwardSpeed = Mathf.Clamp(forwardSpeed, 750f, 60000f);
     }
    void  ShapeSet()
     {

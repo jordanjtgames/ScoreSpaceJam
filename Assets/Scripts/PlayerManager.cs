@@ -16,23 +16,32 @@ public class PlayerManager : MonoBehaviour
     GameObject[] Tiles;
     public bool isDead = false;
     public int Shapes;
-    
+    Audiomanager audio;
+
+    private void Start()
+    {
+        audio = GameObject.FindObjectOfType<Audiomanager>();
+    }
     private void Update()
     {
         Shapes = Shape.ShapeIndex;
         ResetPlayer();
-        Debug.Log(isDead);
-       // isDead = false;
+        //Debug.Log(isDead);
+        // isDead = false;
 
-        
-        if(isDead) 
+
+        if (isDead)
         {
-            bool Scoresent = false;
-            if (!Scoresent) 
-            {
-                StartCoroutine(ScoreSend() ) ;
-                Scoresent = true ;
-            }
+            /* bool Scoresent = false;
+             if (!Scoresent) 
+             {
+                 StartCoroutine(ScoreSend() ) ;
+                 Scoresent = true ;
+             }
+             audio.DeathAudio();
+            // audio.ContinueScreenPlay();
+            */
+            StartCoroutine(DeathCoroutine());
 
         }
 
@@ -41,18 +50,32 @@ public class PlayerManager : MonoBehaviour
     {
         if (Input.GetKeyDown(ResetKey))
         {
-          
+
             string currentSceneName = SceneManager.GetActiveScene().name;
             SceneManager.LoadScene(currentSceneName);
 
         }
-    
+
 
     }
-    IEnumerator ScoreSend() 
+    IEnumerator ScoreSend()
     {
         Debug.Log("ScoreSent");
         StartCoroutine(leaderboard.SubmitScore((int)(score.ScoreCount)));
         yield return null;
     }
-}
+    IEnumerator DeathCoroutine()
+    {
+        bool Scoresent = false;
+        if (!Scoresent)
+        {
+            StartCoroutine(ScoreSend());
+            Scoresent = true;
+        }
+        audio.DeathAudio();
+        // audio.ContinueScreenPlay();
+
+        yield return new WaitForSeconds(5);
+
+    }
+}   
