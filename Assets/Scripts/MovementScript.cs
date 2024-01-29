@@ -31,15 +31,17 @@ public class MovementScript : MonoBehaviour
         if (player.isDead)
         {
             rb.isKinematic = true;
+          
+            {
+                
+            }
         }
     }
     void Move()
     {
         float horizontal = Input.GetAxis("Horizontal");
-        if (horizontal != 0f)
-        {
-            audio.MoveAudio();
-        }
+      
+       
 
 
 

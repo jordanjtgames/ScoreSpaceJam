@@ -636,7 +636,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   HorSpeed: 0
-  forwardSpeed: 5
+  forwardSpeed: 500
   ShapeIndex: 0
   Shapes:
   - {fileID: 986215820}
@@ -746,7 +746,7 @@ AudioSource:
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -1478,6 +1478,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 644828126}
+  move: {fileID: 8300000, guid: 6e900746c9618c74fb6745ebd60965e2, type: 3}
+  death: {fileID: 8300000, guid: 8ebf4868dd94c2b41979cec20a2ca180, type: 3}
+  ContinueScreen: {fileID: 8300000, guid: 443e53ed8f082e64e932a5070e8784fb, type: 3}
 --- !u!4 &970444876
 Transform:
   m_ObjectHideFlags: 0
