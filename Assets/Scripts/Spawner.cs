@@ -6,7 +6,7 @@ public class Spawner : MonoBehaviour
 {
     [SerializeField] private GameObject[] Tile;
     [SerializeField] private GameObject Slime;
-    [SerializeField]public Vector3 nextSpawnPoint= new(0,-0.5f,0);
+    [SerializeField]public Vector3 nextSpawnPoint= new(0,-0.424f,69.458f);
     void Start()
     {
 
@@ -33,9 +33,9 @@ public class Spawner : MonoBehaviour
     public void SpawnSlime()
     {
         float x, z;
-        x= Random.Range(-4.5f, 4.5f);
+        x= Random.Range(-1f, 1f);
         z= Random.Range(0,15);
-        Instantiate(Slime,new(nextSpawnPoint.x -x,0,nextSpawnPoint.z-z),Quaternion.identity);
+        Instantiate(Slime,new(nextSpawnPoint.x -x,-0,nextSpawnPoint.z-z),Quaternion.identity);
 
     }
 }

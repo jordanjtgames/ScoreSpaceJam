@@ -12,7 +12,12 @@ public class MovementScript : MonoBehaviour
     [SerializeField] float SpeedMul;
     [SerializeField] KeyCode ChangeKey;
    [SerializeField] PlayerManager player;
+    Rigidbody rb;
 
+    private void Start()
+    {
+        rb= GetComponent<Rigidbody>();
+    }
     // Update is called once per frame
     void Update()
     {
@@ -21,18 +26,22 @@ public class MovementScript : MonoBehaviour
             ShapeSet();
             Move();
         }
+        if (player.isDead)
+        {
+            rb.isKinematic = true;
+        }
     }
     void Move()
     {
         float horizontal = Input.GetAxis("Horizontal");
        
 
-        transform.Translate((new Vector3(horizontal * forwardSpeed, 0f, forwardSpeed * 1f) * Time.deltaTime));
+        rb.velocity = ((new Vector3(horizontal * forwardSpeed, 0f, forwardSpeed * 1f) * Time.deltaTime));
     }
     private void FixedUpdate()
     {
        forwardSpeed += forwardSpeed * Time.deltaTime * SpeedMul;
-        forwardSpeed = Mathf.Clamp(forwardSpeed, 10f, 60f);
+        forwardSpeed = Mathf.Clamp(forwardSpeed, 1000f, 600000f);
     }
    void  ShapeSet()
     {

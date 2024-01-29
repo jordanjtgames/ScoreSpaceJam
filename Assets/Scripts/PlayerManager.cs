@@ -18,6 +18,7 @@ public class PlayerManager : MonoBehaviour
         Shapes = Shape.ShapeIndex;
         ResetPlayer();
         Debug.Log(isDead);
+        //isDead = false;
        
     }
     public void ResetPlayer()
