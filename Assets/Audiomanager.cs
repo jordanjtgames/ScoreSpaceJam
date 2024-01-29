@@ -7,6 +7,7 @@ public class Audiomanager : MonoBehaviour
     [SerializeField] public AudioSource GreenSlimeCollection;
     [SerializeField] public AudioSource RedSlimeCollection;
     [SerializeField] public AudioSource TransformSound;
+    [SerializeField] public AudioSource Background;
     [SerializeField] AudioClip move;
     [SerializeField] AudioClip death;
     [SerializeField] AudioClip ContinueScreen;
@@ -66,5 +67,5 @@ public class Audiomanager : MonoBehaviour
     {
         TransformSound.Play();
     }
-
+    
 }
