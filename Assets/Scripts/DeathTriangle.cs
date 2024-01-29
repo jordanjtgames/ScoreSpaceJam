@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DeathSphere : MonoBehaviour
+public class DeathTrianlge : MonoBehaviour
 {
     PlayerManager player;
 
@@ -12,9 +12,13 @@ public class DeathSphere : MonoBehaviour
     }
     private void OnTriggerEnter(Collider other)
     {
-        if (player.Shapes != 2)
+        if (other.gameObject.tag == "Player")
         {
-            player.isDead = true;
+            if (player.Shapes != 1)
+            {
+                player.isDead = true;
+                Debug.Log("I KILLED");
+            }
         }
     }
 }
