@@ -58,6 +58,7 @@ public class MovementScript : MonoBehaviour
         if (Input.GetKeyDown(ChangeKey))
         {
             ShapeIndex++;
+            audio.TransformSoundPlay();
 
         }
         if (ShapeIndex > 2)

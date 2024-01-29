@@ -6,10 +6,11 @@ public class Audiomanager : MonoBehaviour
     [SerializeField] public AudioSource Player;
     [SerializeField] public AudioSource GreenSlimeCollection;
     [SerializeField] public AudioSource RedSlimeCollection;
+    [SerializeField] public AudioSource TransformSound;
     [SerializeField] AudioClip move;
     [SerializeField] AudioClip death;
     [SerializeField] AudioClip ContinueScreen;
-    [SerializeField] AudioClip GreenSlime;
+    //[SerializeField] AudioClip GreenSlime;
     bool played = false;
     private void Start()
     {
@@ -60,6 +61,10 @@ public class Audiomanager : MonoBehaviour
         if(!RedSlimeCollection.isPlaying) RedSlimeCollection.Play();
 
 
+    }
+    public void TransformSoundPlay()
+    {
+        TransformSound.Play();
     }
 
 }
