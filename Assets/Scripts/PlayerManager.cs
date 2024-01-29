@@ -75,7 +75,9 @@ public class PlayerManager : MonoBehaviour
         audio.DeathAudio();
         
 
-        yield return new WaitForSeconds(5);
+        yield return new WaitForSeconds(2);
+        SceneManager.LoadScene("DeathScreen");
+
 
     }
 }   
