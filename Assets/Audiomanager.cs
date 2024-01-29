@@ -5,6 +5,7 @@ public class Audiomanager : MonoBehaviour
 {
     [SerializeField] public AudioSource Player;
     [SerializeField] public AudioSource GreenSlimeCollection;
+    [SerializeField] public AudioSource RedSlimeCollection;
     [SerializeField] AudioClip move;
     [SerializeField] AudioClip death;
     [SerializeField] AudioClip ContinueScreen;
@@ -51,6 +52,12 @@ public class Audiomanager : MonoBehaviour
     {
         if(!GreenSlimeCollection.isPlaying)
         GreenSlimeCollection.Play();
+
+
+    }
+    public void RedSlimeCollect()
+    {
+        if(!RedSlimeCollection.isPlaying) RedSlimeCollection.Play();
 
 
     }
