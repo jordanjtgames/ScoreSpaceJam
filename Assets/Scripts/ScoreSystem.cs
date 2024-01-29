@@ -8,7 +8,7 @@ public class ScoreSystem : MonoBehaviour
     [SerializeField] int Slime= 0 ;
     [SerializeField] Slider slider;
     [SerializeField] TMP_Text ScoreText;
-    [SerializeField] float ScoreCount = 0 ;
+    public float ScoreCount = 0 ;
     [SerializeField] MovementScript Shape;
     private void Start()
     {

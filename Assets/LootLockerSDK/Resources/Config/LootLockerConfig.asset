@@ -12,20 +12,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 182cd195a28310e479cddf7ff82822f8, type: 3}
   m_Name: LootLockerConfig
   m_EditorClassIdentifier: 
-  apiKey: 
+  apiKey: dev_c047ce23ce87461ea862320f5621bb82
   token: 
   adminToken: 
   refreshToken: 
-  domainKey: 
+  domainKey: z7gat5qs
   gameID: 0
   game_version: 1.0.0.0
-  sdk_version: 
-  deviceID: defaultPlayerId
+  sdk_version: 2.1.2
+  deviceID: 
   url: https://api.lootlocker.io/v1
-  adminUrl: https://api.lootlocker.io/admin
-  playerUrl: https://api.lootlocker.io/player
-  userUrl: https://api.lootlocker.io/game
-  baseUrl: https://api.lootlocker.io
+  adminUrl: https://z7gat5qs.api.lootlocker.io/admin
+  playerUrl: https://z7gat5qs.api.lootlocker.io/player
+  userUrl: https://z7gat5qs.api.lootlocker.io/game
+  baseUrl: https://z7gat5qs.api.lootlocker.io
   clientSideRequestTimeOut: 5
-  currentDebugLevel: 0
+  currentDebugLevel: 3
   allowTokenRefresh: 1
