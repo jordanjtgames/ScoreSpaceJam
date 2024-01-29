@@ -13,10 +13,12 @@ public class MovementScript : MonoBehaviour
     [SerializeField] KeyCode ChangeKey;
    [SerializeField] PlayerManager player;
     Rigidbody rb;
+    Audiomanager audio;
 
     private void Start()
     {
         rb= GetComponent<Rigidbody>();
+        audio = GameObject.FindObjectOfType<Audiomanager>();
     }
     // Update is called once per frame
     void Update()
@@ -34,9 +36,14 @@ public class MovementScript : MonoBehaviour
     void Move()
     {
         float horizontal = Input.GetAxis("Horizontal");
-       
+        if (horizontal != 0f)
+        {
+            audio.MoveAudio();
+        }
 
-       rb.velocity = ((new Vector3(horizontal * forwardSpeed, 0f, forwardSpeed * 1f) * Time.deltaTime));
+
+
+        rb.velocity = ((new Vector3(horizontal * forwardSpeed, 0f, forwardSpeed * 1f) * Time.deltaTime));
     }
     private void FixedUpdate()
     {
