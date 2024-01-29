@@ -18,11 +18,15 @@ public class ScoreSystem : MonoBehaviour
     public void AddScore() 
     {
         Slime +=10;
+       
+    }
+    public void AddBar() 
+    {
         slider.value += 10;
     }
     private void Update()
     {
-        ScoreCount = (gameObject.transform.position.z);
+        ScoreCount = (gameObject.transform.position.z)+Slime;
         if (slider.value >= slider.maxValue)
         {
             slider.value = 0f;

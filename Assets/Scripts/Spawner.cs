@@ -5,7 +5,8 @@ using UnityEngine;
 public class Spawner : MonoBehaviour
 {
     [SerializeField] private GameObject[] Tile;
-    [SerializeField] private GameObject Slime;
+    [SerializeField] private GameObject SlimeRed;
+    [SerializeField] private GameObject SlimeGreen;
     [SerializeField]public Vector3 nextSpawnPoint= new(0,-0.424f,69.458f);
     void Start()
     {
@@ -13,9 +14,9 @@ public class Spawner : MonoBehaviour
        for(int i = 0; i < 3; i++)
         {
             SpawnTiles();
-            SpawnSlime();
-            SpawnSlime();
-            SpawnSlime();
+            SpawnSlimeRed();
+            SpawnSlimeGreen();
+            SpawnSlimeGreen();
 
         }
 
@@ -30,12 +31,20 @@ public class Spawner : MonoBehaviour
 
     }
 
-    public void SpawnSlime()
+    public void SpawnSlimeRed()
     {
         float x, z;
         x= Random.Range(-1f, 1f);
         z= Random.Range(0,15);
-        Instantiate(Slime,new(nextSpawnPoint.x -x,-0,nextSpawnPoint.z-z),Quaternion.identity);
+        Instantiate(SlimeRed,new(nextSpawnPoint.x -x,-0,nextSpawnPoint.z-z),Quaternion.identity);
+
+    }
+    public void SpawnSlimeGreen()
+    {
+        float x, z;
+        x = Random.Range(-1f, 1f);
+        z = Random.Range(0, 15);
+        Instantiate(SlimeGreen, new(nextSpawnPoint.x - x, -0, nextSpawnPoint.z - z), Quaternion.identity);
 
     }
 }
