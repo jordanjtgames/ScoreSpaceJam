@@ -6,7 +6,7 @@ using UnityEngine.SocialPlatforms.Impl;
 
 public class LeaderBoardScoreSubmit : MonoBehaviour
 {
-    string LeaderboardID = "19880";
+    string LeaderboardID = "20088";
     void Start()
     {
 

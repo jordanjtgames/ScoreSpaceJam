@@ -6,7 +6,7 @@ using LootLocker.Requests;
 
 public class LeaderBoardShow : MonoBehaviour
 {
-    int leaderboardID = 19880;
+    int leaderboardID = 20088;
     public TextMeshProUGUI playerNames;
     public TextMeshProUGUI playerScores;
     // Start is called before the first frame update
@@ -19,7 +19,7 @@ public class LeaderBoardShow : MonoBehaviour
     IEnumerator SetupRoutine()
     {
         yield return LoginRoutine();
-        yield return new WaitForSeconds(.5f);
+        yield return new WaitForSeconds(1f);
         yield return FetchTopHighscoresRoutine();
     }
 
