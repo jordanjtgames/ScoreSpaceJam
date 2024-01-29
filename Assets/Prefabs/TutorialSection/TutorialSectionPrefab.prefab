@@ -2079,6 +2079,8 @@ GameObject:
   - component: {fileID: 2932692622901300386}
   - component: {fileID: 2241912946097636103}
   - component: {fileID: 4105075846848395213}
+  - component: {fileID: 5733802759487671369}
+  - component: {fileID: 7818609107258756543}
   m_Layer: 0
   m_Name: WallSphereUVed
   m_TagString: Untagged
@@ -2129,7 +2131,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 53ff404b6c0606b41840cde2217a5993, type: 2}
+  - {fileID: 2100000, guid: 432aeacdf62eb4d4f80f56b36b45d3ea, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2151,6 +2153,39 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &5733802759487671369
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2592055556541814296}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 2.7549999, y: 1.8999951, z: 0.10000001}
+  m_Center: {x: 0, y: 0.050002456, z: 0.04999999}
+--- !u!114 &7818609107258756543
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2592055556541814296}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 078406ad2ecd0f046964b600b2e43da6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2592055556694588104
 GameObject:
   m_ObjectHideFlags: 0
@@ -13181,6 +13216,8 @@ GameObject:
   - component: {fileID: 7083463788475042412}
   - component: {fileID: 6188613688537826761}
   - component: {fileID: 8216439380604760323}
+  - component: {fileID: 8614740385845119866}
+  - component: {fileID: 1175178160231054309}
   m_Layer: 0
   m_Name: WallPyramidUVed
   m_TagString: Untagged
@@ -13196,7 +13233,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7567829019594690774}
   m_LocalRotation: {x: 0.000000081460456, y: -0.0011506325, z: 9.377754e-11, w: 0.99999934}
-  m_LocalPosition: {x: 5.0012083, y: 3.975722, z: 11.75317}
+  m_LocalPosition: {x: 5, y: 3.975722, z: 12.66}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -13231,7 +13268,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 53ff404b6c0606b41840cde2217a5993, type: 2}
+  - {fileID: 2100000, guid: 6e5bdb6340d97ae429146ebe997f5a89, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -13253,6 +13290,39 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &8614740385845119866
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7567829019594690774}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e6c161fc681bf2a408101599c4d75830, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!65 &1175178160231054309
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7567829019594690774}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 2.7549996, y: 1.8999953, z: 0.10000001}
+  m_Center: {x: 0.0000005364418, y: 0.050002784, z: 0.04999999}
 --- !u!1 &7798313907781216052
 GameObject:
   m_ObjectHideFlags: 0
@@ -18984,6 +19054,8 @@ GameObject:
   - component: {fileID: 8555333009170793695}
   - component: {fileID: 4689792706493516666}
   - component: {fileID: 7417862719943180208}
+  - component: {fileID: 4451433662163285845}
+  - component: {fileID: 596266789302073297}
   m_Layer: 0
   m_Name: WallCubeUVed
   m_TagString: Untagged
@@ -19034,7 +19106,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 53ff404b6c0606b41840cde2217a5993, type: 2}
+  - {fileID: 2100000, guid: 883dad117da02064b9223f39c06a46d7, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -19056,6 +19128,39 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &4451433662163285845
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9075165186586631781}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4053a727126299743a0afddd064bdced, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!65 &596266789302073297
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9075165186586631781}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 2.7549999, y: 1.9, z: 0.10000004}
+  m_Center: {x: 0, y: 0.050000012, z: 0.049999975}
 --- !u!1 &9075165186598726207
 GameObject:
   m_ObjectHideFlags: 0

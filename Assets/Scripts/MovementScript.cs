@@ -36,12 +36,12 @@ public class MovementScript : MonoBehaviour
         float horizontal = Input.GetAxis("Horizontal");
        
 
-        rb.velocity = ((new Vector3(horizontal * forwardSpeed, 0f, forwardSpeed * 1f) * Time.deltaTime));
+       rb.velocity = ((new Vector3(horizontal * forwardSpeed, 0f, forwardSpeed * 1f) * Time.deltaTime));
     }
     private void FixedUpdate()
     {
        forwardSpeed += forwardSpeed * Time.deltaTime * SpeedMul;
-        forwardSpeed = Mathf.Clamp(forwardSpeed, 1000f, 600000f);
+        forwardSpeed = Mathf.Clamp(forwardSpeed, 1000f, 60000f);
     }
    void  ShapeSet()
     {

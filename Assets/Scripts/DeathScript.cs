@@ -14,12 +14,13 @@ public class DeathScript : MonoBehaviour
     }
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.tag == "Player")
+        if (other.gameObject.CompareTag("Player"))
         {
             if (player.Shapes != 0)
             {
                 player.isDead = true;
-                Debug.Log("I KILLED");
+                Debug.Log("I KILLED AT"+player.transform.position);
+
             }
         }
     }

@@ -12,12 +12,12 @@ public class DeathTrianlge : MonoBehaviour
     }
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.tag == "Player")
+        if (other.gameObject.CompareTag("Player"))
         {
             if (player.Shapes != 1)
             {
                 player.isDead = true;
-                Debug.Log("I KILLED");
+                Debug.Log("I KILLED AT" + player.transform.position);
             }
         }
     }
