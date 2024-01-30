@@ -19,7 +19,7 @@ public class LeaderBoardShow : MonoBehaviour
     IEnumerator SetupRoutine()
     {
         yield return LoginRoutine();
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(4f);
         yield return FetchTopHighscoresRoutine();
     }
 
