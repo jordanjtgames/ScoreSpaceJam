@@ -23,19 +23,6 @@ public class MovementScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (!player.isDead)
-        {
-            ShapeSet();
-            Move();
-        }
-        if (player.isDead)
-        {
-            rb.isKinematic = true;
-          
-            {
-                
-            }
-        }
     }
     void Move()
     {
@@ -51,6 +38,20 @@ public class MovementScript : MonoBehaviour
     {
        forwardSpeed += forwardSpeed * Time.deltaTime * SpeedMul;
         forwardSpeed = Mathf.Clamp(forwardSpeed, 1000f, 60000f);
+
+        if (!player.isDead)
+        {
+            ShapeSet();
+            Move();
+        }
+        if (player.isDead)
+        {
+            rb.isKinematic = true;
+
+            {
+
+            }
+        }
     }
    void  ShapeSet()
     {
