@@ -1063,7 +1063,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   HorSpeed: 0
-  forwardSpeed: 1000
+  forwardSpeed: 500
   ShapeIndex: 0
   Shapes:
   - {fileID: 986215820}
